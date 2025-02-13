@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 10px;
+  color: hsl(0, 0%, 55%);
+  text-transform: uppercase;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    hsl(0, 4%, 60%),
+    hsl(0, 7%, 71%),
+    hsl(0, 100%, 99%)
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joke_container {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 30%);
+  box-shadow: 3px 5px 10px 2px hsl(210, 90%, 40%),
+    /* Vibrant Blue */ -3px -5px 4px 2px hsl(30, 90%, 50%),
+    /* Warm Orange */ 3px -5px 4px 2px hsl(140, 70%, 45%),
+    /* Fresh Green */ -3px 5px 4px 2px hsl(300, 70%, 50%);
+  /* Playful Purple */
+  cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    min-height: 150px;
+    padding: 0px 10px 0px 10px;
+}
+
+
+button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 90%);
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#jokes{
+  color: hsl(0, 0%, 60%);
+  font-weight: 20px;
+  font-weight: 800;
+}
+button:hover{
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 30%);
+}
