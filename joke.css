@@ -28,8 +28,9 @@ body {
 }
 
 .joke_container {
-  width: 30%;
-  height: auto;
+  width: 27%;
+  min-width: 250px;
+  height: 50%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -67,7 +68,7 @@ button{
 
 #jokes{
   color: hsl(0, 0%, 60%);
-  font-weight: 20px;
+  font-size: 18px;
   font-weight: 800;
 }
 button:hover{
