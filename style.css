@@ -73,13 +73,8 @@ button:hover {
   color: hsl(0, 0%, 30%);
 }
 
-@media screen and (max-width: 910px) {
-  .joke_container{
-    width: 50%;
-  }
-}
 
-@media screen and (max-width: 600px) {
+@media (max-width: 575.98px) { 
   body{
     padding: 30px;
   }
@@ -88,6 +83,23 @@ button:hover {
   }
 
   #jokes{
-    font-size: 14px;
+    font-size: 16px;
+  } 
+  
+}
+
+
+@media (min-width: 576px) {  
+  .joke_container{
+    width: 50%;
   }
 }
+
+
+@media (min-width: 992px) {  
+  .joke_container{
+    width: 30%;
+  }
+}
+
+
