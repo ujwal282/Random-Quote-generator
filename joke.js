@@ -6,7 +6,9 @@ button.addEventListener("click", () => {
 
 async function getJokes(){
   try {
-    let response = await fetch("https://api.quotable.io/random", {mode: "cors"});
+    // let response = await fetch("https://api.quotable.io/random", {mode: "cors"});
+      let response = await fetch("https://cors-anywhere.herokuapp.com/https://api.quotable.io/random");
+
     let jokes = await response.json();
     let content = document.querySelector("#jokes");
     content.innerHTML = jokes.content;
