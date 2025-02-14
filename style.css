@@ -49,6 +49,7 @@ body {
   width: 100%;
   min-height: 150px;
   padding: 0px 10px 0px 10px;
+  pointer-event: none;
 }
 
 button {
