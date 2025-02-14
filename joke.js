@@ -12,6 +12,7 @@ async function getJokes(){
     content.innerHTML = jokes.content;
   } catch (error) {
     console.log(error)
+    window.alert(error);
   }
 
 }
