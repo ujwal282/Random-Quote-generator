@@ -28,9 +28,7 @@ body {
 }
 
 .joke_container {
-  width: 27%;
-  min-width: 250px;
-  height: 50%;
+  width: 30%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -40,38 +38,56 @@ body {
   border-radius: 8px;
   background-color: hsl(0, 0%, 30%);
   box-shadow: 3px 5px 10px 2px hsl(210, 90%, 40%),
-    /* Vibrant Blue */ -3px -5px 4px 2px hsl(30, 90%, 50%),
-    /* Warm Orange */ 3px -5px 4px 2px hsl(140, 70%, 45%),
-    /* Fresh Green */ -3px 5px 4px 2px hsl(300, 70%, 50%);
-  /* Playful Purple */
+             -3px -5px 4px 2px hsl(30, 90%, 50%), 
+              3px -5px 4px 2px hsl(140, 70%, 45%),
+             -3px 5px 4px 2px hsl(300, 70%, 50%);
+
   cursor: pointer;
 }
 
-.content{
-    width: 100%;
-    min-height: 150px;
-    padding: 0px 10px 0px 10px;
+.content {
+  width: 100%;
+  min-height: 150px;
+  padding: 0px 10px 0px 10px;
 }
 
-
-button{
-    padding: 10px 15px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    background-color: hsl(0, 0%, 50%);
-    color: hsl(0, 0%, 90%);
-    font-weight: 800;
-    font-size: 16px;
-    cursor: pointer;
+button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 90%);
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-#jokes{
+#jokes {
   color: hsl(0, 0%, 60%);
-  font-size: 18px;
+  font-weight: 20px;
   font-weight: 800;
 }
-button:hover{
-    background-color: hsl(0, 0%, 80%);
-    color: hsl(0, 0%, 30%);
+button:hover {
+  background-color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 30%);
+}
+
+@media screen and (max-width: 910px) {
+  .joke_container{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  body{
+    padding: 30px;
+  }
+  .joke_container{
+    width: 100%;
+  }
+
+  #jokes{
+    font-size: 14px;
+  }
 }
